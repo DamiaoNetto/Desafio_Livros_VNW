@@ -17,6 +17,7 @@ header{
         color: #fff;
         font-size: 24px;
         font-weight: bold;
+        
     }
 }
 
@@ -30,20 +31,21 @@ header{
         li a{
             color: #fff;
         }
-    }
 
+    }
 }
 
 .boxSearch{
-    border: solid 2px #fff;
+    border: solid 3px #fff;
     width: 17vw;
     height: 6vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     border-radius: 15px;
     padding-right: 20px;
     margin-right: 20px;
+
+  
 }
 
 .boxInput{
@@ -51,10 +53,72 @@ border: none;
 outline: none;
 background-color: transparent;
 color: #fff;
-padding-left: 18px;
+padding-left: 10px;
 font-size: 16px;
 &::placeholder{
     color: #fff;
 }
 }
 
+
+@media(max-width:1460px){
+    .boxLogo{
+        h1{
+            font-size: 1.7vw;
+        }
+        img{
+            width: 5vw;
+        }
+    }
+    .boxMenu{
+        ul{
+            font-size: 1.7vw;
+        }
+
+    }
+    .boxSearch{
+        width: 20vw;
+       
+    }.boxInput{
+        width: 16vw;
+        &::placeholder{
+            font-size:1.4vw;
+        }
+    }
+ 
+}
+@media(max-width:760px){
+    header{
+        height: 25vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .boxSearch{
+        display: none;
+    }
+    .boxLogo{
+        width: 100%;
+        h1{
+            font-size: 28px;
+        }
+        img{
+            width: 50px;
+        }
+    }
+    .boxMenu{
+        width: 100%;
+        ul{
+            font-size: 20px;
+            justify-content: space-around;
+        }
+
+    }
+}
+
+@media(max-width:380px){
+    .boxMenu{
+        ul{
+            font-size: 16px;
+        }
+    }
+}

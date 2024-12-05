@@ -28,6 +28,7 @@ export default function Header(){
                     <input className={S.boxInput} type="text" placeholder='O que você procura?' />
                     <img src={busca} alt="" />
                 </div>
+
             </header>
                 <Routes>
 

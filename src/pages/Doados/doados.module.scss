@@ -1,0 +1,62 @@
+
+.boxDoados{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        margin: 20px;
+    }
+}
+
+.boxCards{
+    width: 85vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+
+
+    article{
+        border: 3px solid #005695;
+        width: 220px;
+        height:auto;
+        background-color: #fff;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+
+        img{
+           padding-top: 10px;
+        }
+        h3{
+            font-size: 20px;
+            text-align: center;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media(max-width:1170px){
+    .boxCards{
+       height: auto;
+    }
+    .boxDoados{
+        height: auto;
+    }
+    article{
+        height: auto;
+    }
+}
+
+@media(max-width:510px){
+    .boxDoados{
+        height: auto;
+    }
+
+}

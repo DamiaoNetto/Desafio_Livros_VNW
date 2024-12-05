@@ -22,3 +22,31 @@ footer{
     align-items: center;
     height: 5vh;
 }
+
+.boxIconsRedes{
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media(max-width:1000px){
+    .boxSocial{
+        .boxIconsRedes{
+            width: 230px;
+        }
+        }   
+}
+@media(max-width:585px){
+    .boxSocial{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .boxInfo{
+        p{
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+}
