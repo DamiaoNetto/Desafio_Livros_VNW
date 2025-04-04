@@ -1,5 +1,4 @@
 import S from './doados.module.scss'
-import livro from '../../assets/livro_design.JPG'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
@@ -23,7 +22,7 @@ export default function Doados(){
         <h2>Livros Doados</h2>
         <section className={S.boxCards}>
             <article>
-                <img src={livro} alt="imagem de um livro que se chama o protagonista" />
+                <img src="/assets/livro_design.jpg" alt="imagem de um livro que se chama o protagonista" />
                 
                 <h3>Design</h3>
                 <p>Eric Evans</p>
