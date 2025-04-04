@@ -1,17 +1,18 @@
 
 .boxDoados{
-    height: 70vh;
+    // height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     h2{
         margin: 20px;
     }
+    min-height: 80vh;
 }
 
 .boxCards{
     width: 85vw;
-    height: auto;
+    min-height: 60vh;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -20,18 +21,34 @@
 
 
     article{
-        border: 3px solid #005695;
-        width: 220px;
-        height:auto;
+        width: 270px;
+        height: 340px; 
         background-color: #fff;
         border-radius: 15px;
         display: flex;
-        flex-direction: column;
-
-        img{
-           padding-top: 10px;
+        word-wrap: break-word; 
+        word-break: break-word;
+        padding: 10px;
+        box-shadow: 
+        rgba(0, 86, 149, 0.25) 0px 50px 100px -20px, /* Sombra azul suave */
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,    /* Sombra preta mais suave */
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; /* Sombra interna */
+        a{
+            display: flex;
+            justify-content: center;
         }
+        img{
+           padding-top:5px;
+           width: 30%;
+           cursor: pointer;
+        }
+        img:hover {
+            transform: scale(1.2); 
+            
+          }
+        
         h3{
+            color: #005695;
             font-size: 20px;
             text-align: center;
         }
